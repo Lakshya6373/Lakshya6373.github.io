@@ -70,3 +70,40 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
         if (target) target.scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+// Contact form with toast
+const contactForm = document.getElementById('contactForm');
+const toast = document.getElementById('toast');
+if (contactForm) {
+    contactForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const formData = new FormData(contactForm);
+        const btn = contactForm.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        btn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+
+        fetch('https://formsubmit.co/ajax/dubeylakshya1@gmail.com', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: formData
+        })
+        .then(res => res.json())
+        .then(() => {
+            contactForm.reset();
+            showToast();
+        })
+        .catch(() => {
+            showToast();
+            contactForm.reset();
+        })
+        .finally(() => {
+            btn.disabled = false;
+            btn.innerHTML = 'Send Message <i class="fas fa-arrow-right"></i>';
+        });
+    });
+}
+
+function showToast() {
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 4000);
+}

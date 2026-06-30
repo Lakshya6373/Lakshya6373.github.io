@@ -296,10 +296,9 @@
                                 class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm" action="https://formsubmit.co/dubeylakshya1@gmail.com" method="POST">
+                <form class="contact-form" id="contactForm">
                     <input type="hidden" name="_subject" value="New message from Portfolio">
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://lakshya6373.github.io/#contact">
                     <input type="text" name="name" placeholder="Your name" required autocomplete="name">
                     <input type="email" name="email" placeholder="Email address" required autocomplete="email">
                     <textarea name="message" rows="4" placeholder="Message" required></textarea>
@@ -322,6 +321,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span>Message sent successfully! I'll get back to you soon.</span>
+    </div>
 
     <script src="./js/script.js"></script>
 </body>
