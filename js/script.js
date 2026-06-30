@@ -62,21 +62,6 @@ const statsObserver = new IntersectionObserver(entries => {
 const aboutStats = document.querySelector('.about-stats');
 if (aboutStats) statsObserver.observe(aboutStats);
 
-// Contact form
-const form = document.getElementById('contactForm');
-if (form) {
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        const data = new FormData(form);
-        if (!data.get('name') || !data.get('email') || !data.get('message')) {
-            alert('Please fill all fields.');
-            return;
-        }
-        alert('Thanks for reaching out! I\'ll get back to you soon.');
-        form.reset();
-    });
-}
-
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
