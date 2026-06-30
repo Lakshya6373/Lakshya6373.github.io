@@ -856,11 +856,13 @@ button {
     transition: all 0.3s ease;
     z-index: 9999;
 }
+
 .toast.show {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
 }
+
 .toast i {
     color: #22c55e;
     font-size: 1.1rem;

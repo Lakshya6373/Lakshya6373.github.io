@@ -87,19 +87,19 @@ if (contactForm) {
             headers: { 'Accept': 'application/json' },
             body: formData
         })
-        .then(res => res.json())
-        .then(() => {
-            contactForm.reset();
-            showToast();
-        })
-        .catch(() => {
-            showToast();
-            contactForm.reset();
-        })
-        .finally(() => {
-            btn.disabled = false;
-            btn.innerHTML = 'Send Message <i class="fas fa-arrow-right"></i>';
-        });
+            .then(res => res.json())
+            .then(() => {
+                contactForm.reset();
+                showToast();
+            })
+            .catch(() => {
+                showToast();
+                contactForm.reset();
+            })
+            .finally(() => {
+                btn.disabled = false;
+                btn.innerHTML = 'Send Message <i class="fas fa-arrow-right"></i>';
+            });
     });
 }
 
