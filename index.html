@@ -1,310 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cloud & DevOps Engineer Portfolio - AWS, Azure, Kubernetes, Docker, CI/CD">
-    <meta name="theme-color" content="#00d4ff">
-    <title>Lakshya Dubey | DevOps & Cloud Engineer</title>
+    <meta name="description"
+        content="Lakshya Dubey — DevOps & Cloud Engineer with 2+ years of experience in AWS, Kubernetes, Terraform, CI/CD, and platform engineering.">
+    <meta name="theme-color" content="#22c55e">
+    <title>Lakshya Dubey — DevOps & Cloud Engineer</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <!-- Skip to main content (WCAG AA) -->
-    <a href="#main-content" class="skip-to-main">Skip to main content</a>
-    
-    <!-- Preloader -->
-    <div class="preloader" role="status" aria-live="polite">
-        <div class="loader">
-            <div class="spinner" aria-hidden="true"></div>
-            <p>Loading Portfolio...</p>
+    <!-- Terminal Boot Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="boot-sequence">
+            <div class="boot-line" style="--delay: 0">[ <span class="text-green">OK</span> ] initializing system
+                modules...</div>
+            <div class="boot-line" style="--delay: 1">[ <span class="text-green">OK</span> ] loading: aws, kubernetes,
+                docker, terraform</div>
+            <div class="boot-line" style="--delay: 2">[ <span class="text-green">OK</span> ] connecting to
+                cluster.prod.internal</div>
+            <div class="boot-line" style="--delay: 3">[ <span class="text-green">OK</span> ] deploying portfolio —
+                status: <span class="text-green">RUNNING</span></div>
         </div>
-    </div>
-    <!-- Animated Cloud Background -->
-    <div class="clouds-container" aria-hidden="true">
-        <div class="cloud cloud1"></div>
-        <div class="cloud cloud2"></div>
-        <div class="cloud cloud3"></div>
-        <div class="cloud cloud4"></div>
     </div>
 
     <!-- Navigation -->
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <div class="nav-brand">
-                <i class="fas fa-cloud" aria-hidden="true"></i> <span>Lakshya Dubey</span>
+            <a href="#home" class="nav-brand">
+                <span class="prompt-symbol">$</span> ~/lakshya
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">home</a>
+                <a href="#about" class="nav-link">about</a>
+                <a href="#experience" class="nav-link">experience</a>
+                <a href="#skills" class="nav-link">skills</a>
+                <a href="#projects" class="nav-link">projects</a>
+                <a href="#contact" class="nav-link">contact</a>
             </div>
-            <ul class="nav-menu" role="menubar">
-                <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
-                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
-                <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
-                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
-                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
-            </ul>
-            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-status">
+                <span class="status-dot"></span>
+                <span class="status-text">systems nominal</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero" aria-labelledby="hero-heading">
+    <section id="home" class="hero">
         <div class="container">
-            <div class="hero-content" id="main-content">
-                <div class="hero-badge" role="status">
-                    <i class="fas fa-code" aria-hidden="true"></i> Available for Opportunities
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="terminal-window hero-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">lakshya@prod ~ </span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="ps1"><span class="ps1-user">lakshya</span>@<span
+                                        class="ps1-host">prod</span>:<span class="ps1-dir">~</span>$</span> cat
+                                /etc/profile.d/intro.yaml
+                            </div>
+                            <div class="terminal-output yaml-block">
+                                <span class="yaml-key">name:</span> Lakshya Dubey<br>
+                                <span class="yaml-key">role:</span> DevOps &amp; Cloud Engineer<br>
+                                <span class="yaml-key">experience:</span> 2+ years<br>
+                                <span class="yaml-key">company:</span> Godigit Insurance<br>
+                                <span class="yaml-key">location:</span> Pune, India<br>
+                                <span class="yaml-key">status:</span> <span
+                                    class="text-green">available_for_opportunities</span>
+                            </div>
+                            <div class="terminal-line typing-line">
+                                <span class="ps1"><span class="ps1-user">lakshya</span>@<span
+                                        class="ps1-host">prod</span>:<span class="ps1-dir">~</span>$</span> <span
+                                    id="typingText"></span><span class="cursor">_</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-terminal"></i> View Projects
+                        </a>
+                        <a href="./assets/Lakshya_Dubey_Resume.pdf" class="btn btn-ghost" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/Lakshya6373" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/lakshya-dubey-localhost" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:dubeylakshya1@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
-                <h1 id="hero-heading" class="glitch" data-text="Lakshya Dubey">Lakshya Dubey</h1>
-                <h2 class="hero-subtitle">DevOps & Cloud Engineer </h2>
-                <p class="typing-text" aria-live="polite" aria-atomic="true"></p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary" aria-label="View my projects">
-                        <i class="fas fa-rocket" aria-hidden="true"></i> <span>View Projects</span>
-                    </a>
-                    <a href="#contact" class="btn btn-secondary" aria-label="Contact me">
-                        <i class="fas fa-envelope" aria-hidden="true"></i> <span>Contact Me</span>
-                    </a>
-                    <a href="./assets/Lakshya_Dubey_Resume.pdf" class="btn btn-outline" download="Lakshya_Dubey_Resume.pdf" aria-label="Download my CV (PDF)">
-                        <i class="fas fa-download" aria-hidden="true"></i> <span>Download CV</span>
-                    </a>
-                </div>
-                <nav class="social-links" aria-label="Social media links">
-                    <a href="https://github.com/Lakshya6373" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit my GitHub profile">
-                        <i class="fab fa-github" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/lakshya-dubey-localhost" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit my LinkedIn profile">
-                        <i class="fab fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                    <a href="mailto:dubeylakshya1@gmail.com" class="social-icon" aria-label="Send me an email">
-                        <i class="fas fa-envelope" aria-hidden="true"></i>
-                    </a>
-                    <a href="tel:+918957904984" class="social-icon" aria-label="Call me">
-                        <i class="fas fa-phone" aria-hidden="true"></i>
-                    </a>
-                </nav>
-                <div class="scroll-indicator" aria-hidden="true">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <!-- Particle Effect -->
-        <canvas id="particles" aria-hidden="true"></canvas>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about" aria-labelledby="about-heading">
-        <div class="container">
-            <h2 id="about-heading" class="section-title" data-aos="fade-up">About Me</h2>
-            <div class="about-content">
-                <div class="about-image" data-aos="fade-right">
-                    <img src="./assets/profile-photo.png" alt="Lakshya Dubey - DevOps & Cloud Engineer" class="profile-photo">
-                    <div class="experience-badge" role="status" aria-label="2 year of experience">
-                        <div class="badge-content">
-                            <h3>2</h3>
-                            <p>Year Experience</p>
+                <div class="hero-visual">
+                    <div class="infra-diagram">
+                        <div class="diagram-node node-aws"><i class="fab fa-aws"></i><span>AWS</span></div>
+                        <div class="diagram-node node-k8s"><i class="fas fa-dharmachakra"></i><span>K8s</span></div>
+                        <div class="diagram-node node-docker"><i class="fab fa-docker"></i><span>Docker</span></div>
+                        <div class="diagram-node node-terraform"><i class="fas fa-cube"></i><span>Terraform</span></div>
+                        <div class="diagram-node node-git"><i class="fab fa-git-alt"></i><span>GitOps</span></div>
+                        <div class="diagram-node node-monitor"><i
+                                class="fas fa-chart-line"></i><span>Observability</span></div>
+                        <div class="diagram-center">
+                            <i class="fas fa-server"></i>
+                            <span>Production</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-text" data-aos="fade-left">
-                    <h3>Hello, I'm Lakshya Dubey</h3>
-                    <p class="highlight">DevOps & Cloud Engineer | AWS & Kubernetes Specialist | Automation Expert</p>
-                    <p>I'm a passionate DevOps & Cloud Engineer having  hands-on experience managing production systems, troubleshooting deployments, and automating cloud infrastructure with CI/CD pipelines. Currently working at Godigit Insurance in Pune, I specialize in AWS infrastructure management, Kubernetes orchestration, and ensuring scalable and reliable cloud solutions.</p>
-                    <p>My expertise spans across AWS services (EC2, VPC, S3, EKS, Route 53), Kubernetes, Docker, CI/CD automation, Ansible and Infrastructure as Code with Terraform. I'm committed to implementing cloud best practices and actively pursuing Terraform certification to deliver scalable solutions.</p>
-                    
-                    <ul class="about-highlights" role="list">
-                        <li class="highlight-item">
-                            <i class="fas fa-check-circle" aria-hidden="true"></i>
-                            <span>AWS Infrastructure Management (EC2, VPC, S3, EKS)</span>
-                        </li>
-                        <li class="highlight-item">
-                            <i class="fas fa-check-circle" aria-hidden="true"></i>
-                            <span>Kubernetes & Docker Orchestration</span>
-                        </li>
-                        <li class="highlight-item">
-                            <i class="fas fa-check-circle" aria-hidden="true"></i>
-                            <span>CI/CD Automation with Jenkins & GitHub Actions</span>
-                        </li>
-                        <li class="highlight-item">
-                            <i class="fas fa-check-circle" aria-hidden="true"></i>
-                            <span>Infrastructure as Code (Terraform & CloudFormation)</span>
-                        </li>
-                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"># about</span>
+                <h2>whoami</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-photo-col">
+                    <div class="about-photo-wrapper">
+                        <img src="./assets/profile-photo.png" alt="Lakshya Dubey" class="about-photo">
+                    </div>
+                    <div class="photo-badge">
+                        <span class="badge-number">2+</span>
+                        <span class="badge-label">yrs exp</span>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <div class="about-card">
+                        <p>Cloud and DevOps Engineer with <strong>2+ years</strong> of experience designing, operating,
+                            and automating scalable AWS and Kubernetes infrastructure. Currently at <strong>Godigit
+                                Insurance, Pune</strong>, building production-grade platforms using Terraform, GitOps
+                            practices, and ArgoCD-driven delivery pipelines.</p>
+                        <p>Proven track record in EKS platform operations, observability stack management, CI/CD
+                            automation, and cloud cost optimization at production scale. Experienced in
+                            infrastructure-as-code, hybrid cloud connectivity, and security-first platform engineering
+                            across mission-critical environments.</p>
+                    </div>
+                    <div class="metrics-row">
+                        <div class="metric-box">
+                            <span class="metric-val" data-target="2">0</span><span class="metric-unit">+</span>
+                            <span class="metric-label">Years Experience</span>
+                        </div>
+                        <div class="metric-box">
+                            <span class="metric-val" data-target="500">0</span><span class="metric-unit">+</span>
+                            <span class="metric-label">Services Managed</span>
+                        </div>
+                        <div class="metric-box">
+                            <span class="metric-val" data-target="30">0</span><span class="metric-unit">%</span>
+                            <span class="metric-label">Cost Reduced</span>
+                        </div>
+                        <div class="metric-box">
+                            <span class="metric-val" data-target="99">0</span><span class="metric-unit">.9%</span>
+                            <span class="metric-label">Uptime SLA</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="stats" data-aos="fade-up" role="region" aria-label="Professional statistics">
-                <div class="stat-item">
-                    <i class="fas fa-briefcase" aria-hidden="true"></i>
-                    <h3 class="counter" data-target="1" aria-label="2 year of experience">0</h3>
-                    <p>Year Experience</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"># experience</span>
+                <h2>git log --oneline</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="commit-hash">HEAD</div>
+                        <div class="commit-line"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3>DevOps / Cloud Engineer</h3>
+                                <p class="timeline-company">Godigit Insurance — Pune, Maharashtra</p>
+                            </div>
+                            <span class="timeline-date">Jul 2024 — Present</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Designed and implemented DevSecOps pipelines using <strong>Jenkins</strong> and
+                                <strong>Bitbucket Pipelines</strong>, reducing release cycle times by 30% across
+                                production platforms</li>
+                            <li>Automated infrastructure provisioning with <strong>Terraform</strong> and <strong>AWS
+                                    CloudFormation</strong> using hardened modules, eliminating configuration drift and
+                                cutting manual effort by 40%</li>
+                            <li>Administered production <strong>EKS clusters</strong> — node group lifecycle, capacity
+                                planning, Secrets management, Ingress controllers, and HPA autoscaling across 500+
+                                running services</li>
+                            <li>Implemented monitoring with <strong>Prometheus &amp; Grafana</strong>, accelerating
+                                root-cause analysis by 45%</li>
+                            <li>Managed blue/green and canary deployment strategies, hardening security via <strong>AWS
+                                    Control Tower</strong>, IAM frameworks, and SCP governance policies</li>
+                            <li>Configured enterprise <strong>F5 Load Balancers</strong> with custom iRules, DDoS
+                                mitigation, and hybrid AWS networking with Transit Gateway across 5+ accounts</li>
+                            <li>Optimized AWS costs by <strong>30%+</strong> through resource tagging, EBS optimization,
+                                and automated EC2 scheduling</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>AWS</span><span>EKS</span><span>Terraform</span><span>Jenkins</span><span>Docker</span><span>ArgoCD</span><span>Prometheus</span><span>Grafana</span><span>F5</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <i class="fas fa-project-diagram" aria-hidden="true"></i>
-                    <h3 class="counter" data-target="10" aria-label="10 plus projects completed">0</h3>
-                    <p>Projects Completed</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-server" aria-hidden="true"></i>
-                    <h3 class="counter" data-target="30" aria-label="30 plus deployments">0</h3>
-                    <p>Production Deployments</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-award" aria-hidden="true"></i>
-                    <h3 class="counter" data-target="30" aria-label="30 percent cost optimization">0</h3>
-                    <p>% Cost Optimization</p>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="commit-hash">edu</div>
+                        <div class="commit-line"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3>B.Tech — Electronics & Communication</h3>
+                                <p class="timeline-company">Ajay Kumar Garg Engineering College</p>
+                            </div>
+                            <span class="timeline-date">CGPA: 7.52</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills" aria-labelledby="skills-heading">
+    <section id="skills" class="section skills">
         <div class="container">
-            <h2 id="skills-heading" class="section-title" data-aos="fade-up">Technical Skills</h2>
-            <p class="section-description" data-aos="fade-up">Expertise across modern cloud platforms, DevOps tools, and automation technologies</p>
+            <div class="section-header">
+                <span class="section-tag"># skills</span>
+                <h2>kubectl get skills -o wide</h2>
+            </div>
             <div class="skills-grid">
-                <!-- Cloud Platforms -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <div class="category-header">
-                        <i class="fas fa-cloud"></i>
-                        <h3>Cloud Platforms</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-aws" aria-hidden="true"></i>
-                            <span>AWS (EC2, VPC, S3, Route53, IAM, EKS, ECR)</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-microsoft" aria-hidden="true"></i>
-                            <span>Azure</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="60"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-network-wired" aria-hidden="true"></i>
-                            <span>Networking (DNS, Load Balancing, Firewalls)</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fab fa-aws"></i></div>
+                    <h3>Cloud & Networking</h3>
+                    <div class="chip-list">
+                        <span class="chip">EC2</span><span class="chip">VPC</span><span class="chip">S3</span><span
+                            class="chip">EKS</span><span class="chip">ECR</span><span class="chip">Route 53</span><span
+                            class="chip">IAM</span><span class="chip">RDS</span><span class="chip">Lambda</span><span
+                            class="chip">CloudWatch</span><span class="chip">API Gateway</span><span
+                            class="chip">Transit Gateway</span><span class="chip">F5 LB</span><span
+                            class="chip">DNS</span><span class="chip">Firewalls</span><span class="chip">SSL/TLS</span>
                     </div>
                 </div>
-
-                <!-- DevOps Tools -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <div class="category-header">
-                        <i class="fas fa-tools"></i>
-                        <h3>DevOps Tools</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-docker" aria-hidden="true"></i>
-                            <span>Docker & Containerization</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-dharmachakra" aria-hidden="true"></i>
-                            <span>Kubernetes, Docker & Helm</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-jenkins" aria-hidden="true"></i>
-                            <span>Jenkins & GitHub Actions</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt" aria-hidden="true"></i>
-                            <span>Git & GitOps</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fas fa-dharmachakra"></i></div>
+                    <h3>Containers & Orchestration</h3>
+                    <div class="chip-list">
+                        <span class="chip">Kubernetes</span><span class="chip">Docker</span><span
+                            class="chip">Helm</span><span class="chip">Kustomize</span><span
+                            class="chip">ArgoCD</span><span class="chip">EKS</span><span class="chip">Docker
+                            Compose</span><span class="chip">HPA</span><span class="chip">Ingress</span>
                     </div>
                 </div>
-
-                <!-- IaC & Automation -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <div class="category-header">
-                        <i class="fas fa-cogs"></i>
-                        <h3>IaC & Automation</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fas fa-cube" aria-hidden="true"></i>
-                            <span>Terraform (Actively Learning & Certification Prep)</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="70"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-scroll" aria-hidden="true"></i>
-                            <span>Ansible Configuration Management</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python" aria-hidden="true"></i>
-                            <span>Python & Shell Scripting</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-brands fa-linux" aria-hidden="true"></i>
-                            <span>Linux System Administration</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fas fa-code-branch"></i></div>
+                    <h3>CI/CD & DevSecOps</h3>
+                    <div class="chip-list">
+                        <span class="chip">Jenkins</span><span class="chip">Bitbucket Pipelines</span><span
+                            class="chip">GitHub Actions</span><span class="chip">GitOps</span><span
+                            class="chip">Trivy</span><span class="chip">Blue/Green</span><span
+                            class="chip">Canary</span><span class="chip">Jira</span>
                     </div>
                 </div>
-
-                <!-- Monitoring -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-                    <div class="category-header">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Monitoring</h3>
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fas fa-cube"></i></div>
+                    <h3>IaC & Automation</h3>
+                    <div class="chip-list">
+                        <span class="chip">Terraform</span><span class="chip">Ansible</span><span
+                            class="chip">CloudFormation</span><span class="chip">Python</span><span
+                            class="chip">Bash</span><span class="chip">Groovy</span><span class="chip">Shell
+                            Scripting</span>
                     </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fas fa-chart-bar" aria-hidden="true"></i>
-                            <span>Prometheus & Grafana</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-search" aria-hidden="true"></i>
-                            <span>ELK Stack</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-eye" aria-hidden="true"></i>
-                            <span>AWS CloudWatch</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fas fa-chart-area"></i></div>
+                    <h3>Monitoring & Observability</h3>
+                    <div class="chip-list">
+                        <span class="chip">Prometheus</span><span class="chip">Grafana</span><span
+                            class="chip">CloudWatch</span><span class="chip">Dynatrace</span><span class="chip">ELK
+                            Stack</span><span class="chip">Alerting</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fab fa-linux"></i></div>
+                    <h3>OS & Platform</h3>
+                    <div class="chip-list">
+                        <span class="chip">Linux</span><span class="chip">Nginx</span><span class="chip">Git</span><span
+                            class="chip">GitHub Copilot</span><span class="chip">MCP</span><span
+                            class="chip">TCP/IP</span>
                     </div>
                 </div>
             </div>
@@ -312,161 +315,184 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects" aria-labelledby="projects-heading">
+    <section id="projects" class="section projects">
         <div class="container">
-            <h2 id="projects-heading" class="section-title" data-aos="fade-up">Featured Projects</h2>
-            <p class="section-description" data-aos="fade-up">Showcasing real-world implementations and technical solutions</p>
-            <div class="projects-filter" data-aos="fade-up" role="group" aria-label="Filter projects by category">
-                <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
-                <button class="filter-btn" data-filter="cloud" aria-pressed="false">Cloud</button>
-                <button class="filter-btn" data-filter="devops" aria-pressed="false">DevOps</button>
-                <button class="filter-btn" data-filter="automation" aria-pressed="false">Automation</button>
+            <div class="section-header">
+                <span class="section-tag"># projects</span>
+                <h2>ls -la ~/projects/</h2>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">all</button>
+                <button class="filter-btn" data-filter="gitops">gitops</button>
+                <button class="filter-btn" data-filter="cicd">ci/cd</button>
+                <button class="filter-btn" data-filter="cloud">cloud</button>
+                <button class="filter-btn" data-filter="ai">ai/automation</button>
             </div>
             <div class="projects-grid">
-                <div class="project-card" data-category="cloud devops" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="project-icon">
-                        <i class="fas fa-user-shield" aria-hidden="true"></i>
-                    </div>
-                    <h3>IAM Portal – Cloud-Native Ticketing</h3>
-                    <p>Built a cloud-native IAM portal using Node.js, Express, Docker, and AWS EC2 for security and scalability. Deployed with Nginx reverse proxy and automated ticketing workflows, reducing access provisioning time by 50%.</p>
-                    <div class="project-tags">
-                        <span>AWS EC2</span>
-                        <span>Docker</span>
-                        <span>Node.js</span>
-                        <span>Nginx</span>
-                    </div>
-                    <a href="#" class="project-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-                </div>
 
-                <div class="project-card" data-category="cloud devops automation" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="project-icon">
-                        <i class="fas fa-cloud-sun" aria-hidden="true"></i>
+                <!-- ArgoCD GitOps -->
+                <article class="project-card" data-category="gitops cloud">
+                    <div class="project-card-top">
+                        <div class="project-icon icon-gitops"><i class="fas fa-sync-alt"></i></div>
+                        <a href="https://github.com/Lakshya6373/argocd-gitops" target="_blank" rel="noopener noreferrer"
+                            class="project-gh"><i class="fab fa-github"></i></a>
                     </div>
-                    <h3>Scalable Cloud-Native Weather Service</h3>
-                    <p>Deployed a scalable weather application on AWS with EC2 Auto Scaling. Architected CI/CD pipeline with Jenkins for automated build and deployment. Managed with Kubernetes for orchestration and provisioned infrastructure with Terraform (IaC).</p>
-                    <div class="project-tags">
-                        <span>AWS</span>
-                        <span>Kubernetes</span>
-                        <span>Jenkins</span>
-                        <span>Terraform</span>
+                    <h3>ArgoCD GitOps — Multi-Env K8s Delivery</h3>
+                    <p>Production-grade GitOps implementation using ArgoCD. Implements App-of-Apps bootstrap,
+                        ApplicationSets for multi-environment automation, Kustomize overlays, Helm charts with per-env
+                        values, RBAC isolation via Projects, sync waves for ordered deployment, and Slack notification
+                        hooks.</p>
+                    <div class="project-chips">
+                        <span>ArgoCD</span><span>Kubernetes</span><span>Helm</span><span>Kustomize</span><span>GitOps</span><span>RBAC</span>
                     </div>
-                    <a href="#" class="project-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-                </div>
+                    <a href="https://github.com/Lakshya6373/argocd-gitops" target="_blank" rel="noopener noreferrer"
+                        class="project-link">
+                        View on GitHub <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </article>
 
-                <div class="project-card" data-category="cloud devops" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="project-icon">
-                        <i class="fas fa-server" aria-hidden="true"></i>
+                <!-- GitHub Actions AWS -->
+                <article class="project-card" data-category="cicd cloud">
+                    <div class="project-card-top">
+                        <div class="project-icon icon-cicd"><i class="fab fa-github"></i></div>
+                        <a href="https://github.com/Lakshya6373/Github_Action_AWS" target="_blank"
+                            rel="noopener noreferrer" class="project-gh"><i class="fab fa-github"></i></a>
                     </div>
-                    <h3>AWS Infrastructure Management</h3>
-                    <p>Deployed and managed AWS infrastructure (EC2, S3, RDS, VPC, IAM) improving infrastructure reliability by 30%. Optimized costs by over 30% through resource tagging and automated EC2 shutdown for non-production environments.</p>
-                    <div class="project-tags">
-                        <span>AWS EC2</span>
-                        <span>RDS</span>
-                        <span>VPC</span>
-                        <span>IAM</span>
+                    <h3>GitHub Actions → AWS ECS Pipeline</h3>
+                    <p>End-to-end CI/CD with security scanning at every stage. Runs Bandit, pip-audit, Gitleaks in
+                        parallel, builds Docker image to ECR, performs Trivy image scan, deploys to ECS. Includes
+                        Prometheus + Grafana monitoring, Terraform infra, and OIDC-based AWS auth — zero stored
+                        credentials.</p>
+                    <div class="project-chips">
+                        <span>GitHub Actions</span><span>AWS
+                            ECS</span><span>ECR</span><span>Terraform</span><span>Docker</span><span>Trivy</span><span>Prometheus</span>
                     </div>
-                    <a href="#" class="project-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-                </div>
+                    <a href="https://github.com/Lakshya6373/Github_Action_AWS" target="_blank" rel="noopener noreferrer"
+                        class="project-link">
+                        View on GitHub <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </article>
 
-                <div class="project-card" data-category="devops automation" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="project-icon">
-                        <i class="fas fa-dharmachakra" aria-hidden="true"></i>
+                <!-- AI Cost Copilot -->
+                <article class="project-card" data-category="ai cloud">
+                    <div class="project-card-top">
+                        <div class="project-icon icon-ai"><i class="fas fa-robot"></i></div>
                     </div>
-                    <h3>Kubernetes Container Orchestration</h3>
-                    <p>Built, optimized, and deployed Docker container images on Kubernetes (EKS). Configured ConfigMaps, Secrets, Ingress controllers, and autoscaling policies to handle 20% higher traffic with zero downtime.</p>
-                    <div class="project-tags">
-                        <span>Kubernetes</span>
-                        <span>Docker</span>
-                        <span>EKS</span>
-                        <span>Helm</span>
+                    <h3>AI Cloud Cost Copilot Agent</h3>
+                    <p>Deployed an AI cost optimization bot via GitHub Copilot to cut cloud spend by 15%+. Leverages
+                        custom MCP servers and Jira for granular cost metrics, audits CloudTrail logs across
+                        multi-account environments, and analyzes CloudWatch utilization data for autonomous resource
+                        verdicts.</p>
+                    <div class="project-chips">
+                        <span>AWS</span><span>MCP</span><span>GitHub
+                            Copilot</span><span>Jira</span><span>CloudTrail</span><span>CloudWatch</span>
                     </div>
-                    <a href="#" class="project-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-                </div>
+                </article>
 
-                <div class="project-card" data-category="cloud automation" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="project-icon">
-                        <i class="fas fa-code-branch" aria-hidden="true"></i>
+                <!-- AI RCA Agent -->
+                <article class="project-card" data-category="ai">
+                    <div class="project-card-top">
+                        <div class="project-icon icon-ai"><i class="fas fa-brain"></i></div>
                     </div>
-                    <h3>Infrastructure as Code Automation</h3>
-                    <p>Automated infrastructure provisioning with Terraform and AWS CloudFormation, managing multiple environments with reusable modules and cutting manual provisioning effort by 40%.</p>
-                    <div class="project-tags">
-                        <span>Terraform</span>
-                        <span>CloudFormation</span>
-                        <span>AWS</span>
-                        <span>IaC</span>
+                    <h3>AI-Driven Production RCA Agent</h3>
+                    <p>Autonomous troubleshooting engine that monitors production flows, intercepts multi-tier service
+                        anomalies, and cuts manual MTTR by 50%. Aggregates live logs from Kafka, Oracle SQL, Jenkins
+                        pipelines, and K8s pods in under 10 seconds. Uses LLMs + Dynatrace for 95% accurate diagnostics.
+                    </p>
+                    <div class="project-chips">
+                        <span>MCP</span><span>Kubernetes</span><span>Dynatrace</span><span>Kafka</span><span>LLM</span><span>Jenkins</span>
                     </div>
-                    <a href="#" class="project-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-                </div>
+                </article>
 
-                <div class="project-card" data-category="cloud devops" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="project-icon">
-                        <i class="fas fa-network-wired" aria-hidden="true"></i>
+                <!-- IAM Portal -->
+                <article class="project-card" data-category="cloud">
+                    <div class="project-card-top">
+                        <div class="project-icon icon-cloud"><i class="fas fa-user-shield"></i></div>
                     </div>
-                    <h3>Enterprise Networking & Load Balancing</h3>
-                    <p>Configured and managed enterprise-grade F5 Load Balancers and designed/troubleshooted networking solutions (DNS, firewalls, routing, security groups) ensuring secure and reliable application delivery.</p>
-                    <div class="project-tags">
-                        <span>F5 Load Balancer</span>
-                        <span>DNS</span>
-                        <span>Firewalls</span>
-                        <span>Security Groups</span>
+                    <h3>IAM Portal — Cloud Ticketing System</h3>
+                    <p>Cloud-native IAM portal on AWS EC2 with Node.js, Express, Docker. Nginx reverse proxy with
+                        automated ticketing workflows reduced access provisioning time by 50%. Handles role-based access
+                        with full audit trails.</p>
+                    <div class="project-chips">
+                        <span>AWS EC2</span><span>Docker</span><span>Node.js</span><span>Nginx</span><span>IAM</span>
                     </div>
-                    <a href="#" class="project-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-                </div>
+                </article>
+
+                <!-- EKS Platform -->
+                <article class="project-card" data-category="cloud gitops">
+                    <div class="project-card-top">
+                        <div class="project-icon icon-k8s"><i class="fas fa-dharmachakra"></i></div>
+                    </div>
+                    <h3>EKS Platform Operations</h3>
+                    <p>Managed 500+ services on EKS — Deployments, StatefulSets, DaemonSets, Ingress controllers, HPA
+                        autoscaling. Enforced Kubernetes RBAC, Network Policies, Pod Security Contexts. Handled 20%
+                        traffic growth with zero downtime.</p>
+                    <div class="project-chips">
+                        <span>EKS</span><span>Helm</span><span>RBAC</span><span>HPA</span><span>Ingress</span><span>Docker</span>
+                    </div>
+                </article>
+
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact" aria-labelledby="contact-heading">
+    <section id="contact" class="section contact">
         <div class="container">
-            <h2 id="contact-heading" class="section-title" data-aos="fade-up">Get In Touch</h2>
-            <p class="section-description" data-aos="fade-up">Have a project in mind? Let's discuss how I can help</p>
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <div class="info-item">
-                        <i class="fas fa-envelope" aria-hidden="true"></i>
-                        <h3>Email</h3>
-                        <p>dubeylakshya1@gmail.com</p>
+            <div class="section-header">
+                <span class="section-tag"># contact</span>
+                <h2>curl -X POST /api/contact</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">contact.json</span>
+                        </div>
+                        <div class="terminal-body">
+                            <pre class="json-output">{
+  <span class="json-key">"name"</span>: <span class="json-val">"Lakshya Dubey"</span>,
+  <span class="json-key">"email"</span>: <span class="json-val">"dubeylakshya1@gmail.com"</span>,
+  <span class="json-key">"phone"</span>: <span class="json-val">"+91 8957904984"</span>,
+  <span class="json-key">"location"</span>: <span class="json-val">"Pune, Maharashtra"</span>,
+  <span class="json-key">"linkedin"</span>: <span class="json-val">"lakshya-dubey-localhost"</span>,
+  <span class="json-key">"github"</span>: <span class="json-val">"Lakshya6373"</span>
+}</pre>
+                        </div>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone" aria-hidden="true"></i>
-                        <h3>Phone</h3>
-                        <p>+91 8957904984</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                        <h3>Location</h3>
-                        <p>Pune, Maharashtra, India</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fab fa-linkedin" aria-hidden="true"></i>
-                        <h3>LinkedIn</h3>
-                        <p><a href="https://www.linkedin.com/in/lakshya-dubey-localhost" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">linkedin.com/in/lakshya-dubey-localhost</a></p>
+                    <div class="contact-links">
+                        <a href="mailto:dubeylakshya1@gmail.com" class="contact-item"><i class="fas fa-envelope"></i>
+                            dubeylakshya1@gmail.com</a>
+                        <a href="tel:+918957904984" class="contact-item"><i class="fas fa-phone"></i> +91 8957904984</a>
+                        <a href="https://www.linkedin.com/in/lakshya-dubey-localhost" target="_blank"
+                            rel="noopener noreferrer" class="contact-item"><i class="fab fa-linkedin"></i>
+                            linkedin.com/in/lakshya-dubey-localhost</a>
+                        <a href="https://github.com/Lakshya6373" target="_blank" rel="noopener noreferrer"
+                            class="contact-item"><i class="fab fa-github"></i> github.com/Lakshya6373</a>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm" data-aos="fade-left" novalidate>
+                <form class="contact-form" id="contactForm" novalidate>
                     <div class="form-group">
-                        <label for="contact-name" class="visually-hidden">Your Name</label>
-                        <input type="text" id="contact-name" name="name" placeholder="Your Name" required aria-required="true" autocomplete="name">
-                        <span class="error-message" role="alert" aria-live="polite"></span>
+                        <label for="name">name <span class="req">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
                     </div>
                     <div class="form-group">
-                        <label for="contact-email" class="visually-hidden">Your Email</label>
-                        <input type="email" id="contact-email" name="email" placeholder="Your Email" required aria-required="true" autocomplete="email">
-                        <span class="error-message" role="alert" aria-live="polite"></span>
+                        <label for="email">email <span class="req">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="you@company.com" required
+                            autocomplete="email">
                     </div>
                     <div class="form-group">
-                        <label for="contact-subject" class="visually-hidden">Subject</label>
-                        <input type="text" id="contact-subject" name="subject" placeholder="Subject" required aria-required="true">
-                        <span class="error-message" role="alert" aria-live="polite"></span>
+                        <label for="message">message <span class="req">*</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can I help?"
+                            required></textarea>
                     </div>
-                    <div class="form-group">
-                        <label for="contact-message" class="visually-hidden">Your Message</label>
-                        <textarea id="contact-message" name="message" rows="5" placeholder="Your Message" required aria-required="true"></textarea>
-                        <span class="error-message" role="alert" aria-live="polite"></span>
-                    </div>
-                    <button type="submit" class="btn btn-primary" aria-label="Send message">
-                        <i class="fas fa-paper-plane" aria-hidden="true"></i> <span>Send Message</span>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
                     </button>
                 </form>
             </div>
@@ -476,44 +502,36 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3><i class="fas fa-cloud" aria-hidden="true"></i> Lakshya Dubey</h3>
-                    <p>DevOps & Cloud Engineer | AWS & Kubernetes Specialist</p>
-                    <div class="footer-social">
-                        <a href="https://github.com/Lakshya6373" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/in/lakshya-dubey-localhost" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="mailto:dubeylakshya1@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-                        <a href="tel:+918957904984" aria-label="Phone"><i class="fas fa-phone" aria-hidden="true"></i></a>
-                    </div>
+                    <span class="prompt-symbol">$</span> ~/lakshya
+                    <p>DevOps & Cloud Engineer</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                    </ul>
+                <div class="footer-nav">
+                    <a href="#home">home</a>
+                    <a href="#about">about</a>
+                    <a href="#experience">experience</a>
+                    <a href="#projects">projects</a>
+                    <a href="#contact">contact</a>
                 </div>
-                <div class="footer-contact">
-                    <h4>Get in Touch</h4>
-                    <p><i class="fas fa-envelope" aria-hidden="true"></i> dubeylakshya1@gmail.com</p>
-                    <p><i class="fas fa-phone" aria-hidden="true"></i> +91 8957904984</p>
-                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Pune, Maharashtra</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Lakshya6373" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/lakshya-dubey-localhost" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:dubeylakshya1@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Lakshya Dubey. Built with <i class="fas fa-heart"></i> and deployed on GitHub Pages</p>
+                <p>&copy; 2025 Lakshya Dubey &middot; Deployed on GitHub Pages</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up" aria-hidden="true"></i>
-    </button>
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>
